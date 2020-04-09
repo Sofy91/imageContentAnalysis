@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function start() {
   // Initializes the client with the API key and the Google Vision API.
   gapi.client.init({
-    'apiKey': "AIzaSyBwNP_HQ7ItYAB6g8bvkPI9_At9v--z1HU",
-    'discoveryDocs': ['https://content.googleapis.com/discovery/v1/apis/vision/v1/rest']    
+       
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
   });
