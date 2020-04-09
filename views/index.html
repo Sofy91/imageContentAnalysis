@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMAGE SPONSOR ANALYSIS</title>
+    <link rel="icon" href="favicon.ico" type="views/favicon"/>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">    
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">  
+    <link rel="stylesheet" href="../css/styles.css">  
+    
+    <script src="https://apis.google.com/js/api.js"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwNP_HQ7ItYAB6g8bvkPI9_At9v--z1HU" defer></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/getImageFirebase.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<header class="masthead d-flex">
+    <div class="container text-center my-auto">
+        <h1 class="mb-1">Image Sponsor Analysis</h1>
+    </div>
+    <div class="overlay"></div>
+</header>
+<section>
+    <div class="container text-center">
+        <div class="tab-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">                    
+                        <div class="col-lg-12 col-md-12">
+                          <!--  <img class="img-wrapper" src="../images/image-analysis.png"> -->
+                        </div> 
+                        <!-- <div class="col-lg-12 col-md-12 label-info">
+                            <label>Introduce una url para analizar las imágenes: </label>
+                        </div>   
+                        <div class="col-lg-12 col-md-12 input-web">
+                            <input type="Introduce una url">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>    -->
+                        <div class="col-lg-12 col-md-12 col-btn">
+                            <h1>ANALIZA LAS IMÁGENES DEL EQUIPO QUE PATROCINAS</h1>
+                            <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-test-api" href="#">ANALIZAR</a>
+                        </div>    
+                           
+                        <div class="col-lg-12 col-md-12">
+                            <div id="succes_analysis" style="display: none; min-height: 100px;"></div>
+                        </div>  
+                             
+                        <div class="col-lg-12 col-md-12 col-btn">
+                            <a class="btn btn-dark btn-xl js-scroll-trigger" style="display: none;" id="btn-table" href="#">VER</a>
+                        </div> 
+
+                        <div class="col-lg-12 col-md-12">
+                            <div id="table_div" style="display: none;"></div>
+                        </div>  
+
+                        <div class="col-lg-12 col-md-12">
+                            Gráfica 1
+                            <div id="chart_div" style="width: 1200px; height: 800px; display: none;"></div>
+                        </div> 
+
+                        <div class="col-lg-12 col-md-12">
+                            Gráfica 1
+                            <div id="chart_div2" style="width: 1200px; height: 800px; display: none;"></div>
+                        </div> 
+                    </div>
+                
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+</body>
+</html>

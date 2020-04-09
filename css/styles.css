@@ -1,0 +1,186 @@
+@font-face {
+    font-family: exo2;
+    src: url(../fonts/exo2.woff2);
+}
+
+body{
+    font-family: monospace;
+}
+
+.masthead {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 30px;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(45deg, #4a4eca 0%, #47a56d 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.masthead h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.label-info label{
+    font-size: 20px;
+}
+
+.input-web input{
+    width: 100%;
+}
+
+section{
+    margin: 30px auto auto;
+}
+
+section h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin: 0px auto 10px;
+}
+
+.img-wrapper{
+    height: 250px;
+    margin: 10px 0;
+}
+
+.image-distribution{
+    width: 100%;
+}
+
+#btn-test-api, #btn-exercise-1, #btn-extra{
+    margin-top: 50px;
+}
+
+.info-test-image, .info-image-1, .info-image-extra{
+    display: none;
+    height: 400px;
+}
+@media screen and (max-width: 992px) {
+    .info-image-1 {
+        top: 450px;
+    }
+}
+
+.col-info-json{
+    margin: 50px auto;
+}
+
+.col-info-json, .col-info-json-exercise-1, .col-info-json-extra{
+    margin-bottom: 50px;
+    height: 550px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.code-json{
+    text-align: left;
+    font-size: 10px;
+    max-height: 550px;
+    overflow-y: auto;
+    font-family: monospace;
+    border: none;
+}
+
+.row{
+    margin-bottom: 0;
+}
+
+ul:not(.browser-default) {
+    padding-left: 40px;
+    list-style-type: initial;
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: initial;
+}
+
+.card{
+    margin: 0;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+a{
+   color: #ff6f61;
+}
+
+.row-image-ej2{
+    margin-top: 30px;
+}
+
+.icon-face{
+    position: absolute;
+    display: none;
+    height:100px;
+    width:100px;    
+    z-index: 1;
+}
+
+.col-btn-exercise-2{
+    margin: 30px 0;
+}
+
+.tick, .cross{
+    display: none;
+    position: absolute;
+    top: 6%;
+    left: 30%;
+    width: 50%;
+}
+
+.row-map-show{
+    display: none;
+    margin: 120px auto;
+    height: 500px;
+    padding: 0 35px;
+}
+
+#map{
+    height: 100%;
+}
+
+.lol-class {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 70px;
+    width: 60px;
+    z-index: 1;
+}
+
+.image-to-analyze{
+    width: 200px;
+    background-size: cover;
+}
+
+.row-image{
+    margin: 20px 0;
+}
+
+.col-image{
+    margin: 10px 0;
+}
+span{
+    font-size: 18px;
+}
+
+.btn-dark{
+    margin: 20px;
+}
