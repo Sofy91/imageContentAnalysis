@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMAGE SPONSOR ANALYSIS</title>
+    <link rel="icon" href="favicon.ico" type="views/favicon"/>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">    
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">  
+    <link rel="stylesheet" href="../css/styles.css">  
+    
+    <script src="https://apis.google.com/js/api.js"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwNP_HQ7ItYAB6g8bvkPI9_At9v--z1HU" defer></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/getImageFirebase.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<header class="d-flex">
+    <div class="nav">
+        <ul>
+          <li class="home"><a id="link-home" href="index.html">Home</a></li>
+          <li class="how-it-work"><a id="link-how-it-work" href="index.html">Cómo funciona</a></li>
+          <li class="sponsor"><a id="link-sponsor" href="index.html">Patrocinadores</a></li>
+          <li class="news"><a id="link-news" href="index.html">Noticias</a></li>
+          <li class="contact"><a id="link-contact" href="index.html">Contacto</a></li>
+        </ul>
+        <ul class="list-right">
+            <li class="login"><a id="link-login" href="#">Iniciar sesión</a></li>
+        </ul>
+      </div>
+</header>
+<section>
+    <div class="image-bg-sponsor">
+        <h2 class="subtitle-header-sponsor">¡Hola Fly Emirates!</h2>
+    </div>
+</section>
+
+<section id="section-sponsor">
+    <div class="container text-center">        
+        <div class="row row-sponsor">
+            <div class="col-lg-12">
+                <h2 class="title-analysis">Selecciona la web que quieres analizar</h2>
+            </div>               
+            <div class="col-lg-3 col-md-3">
+                <a class="btn-test-api" href="#">
+                    <div class="logo-web" id="logo-marca"></div>
+                </a>
+            </div> 
+
+            <div class="col-lg-3 col-md-3">
+                <a class="btn-test-api" href="#">
+                    <div class="logo-web" id="logo-as"></div>
+                </a>
+            </div> 
+
+            <div class="col-lg-3 col-md-3">
+                <a class="btn-test-api" href="#">
+                    <div class="logo-web" id="logo-sport"></div>
+                </a>
+            </div> 
+
+            <div class="col-lg-3 col-md-3">
+                <a class="btn-test-api" href="#">
+                    <div class="logo-web" id="logo-mundo-deportivo"></div>
+                </a>
+            </div>      
+        </div>
+
+        <div class="row row-loading">
+            <div class="col-lg-12 col-md-12">
+                <div class="progress" id="succes_analysis">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 
+                    </div>
+                </div>
+            </div>  
+                    
+            <div class="col-lg-12 col-md-12 col-btn">
+                <a class="btn-sponsor" style="display: none;" id="btn-table" href="#">Ver resultados</a>
+            </div> 
+        </div>      
+            
+        
+        <div class="row row-result">
+            <div class="col-lg-12 col-md-12">
+                <div id="chart_div" style="width: 1200px; height: 700px; display: none;"></div>
+            </div>
+            <div class="col-lg-12 col-md-12" style="min-height: 100px;">
+                <h2>Resumen alertas</h2>
+                <ul>
+                    <li>Número de imágenes analizadas: <span id="image-number-analysis"></span></li>
+                    <li>Número de imágenes con logo (azul): <span id="image-number-with-logo"></span></li>
+                    <li>Número de imágenes sin logo (amarillo): <span id="image-number-without-logo"></span></li>
+                    <li>Número de alertas (granate): <span id="image-alert"></span></li>
+                    <li>Media de emociones (Contentos + enfadados): <span id="image-emotion"></span></li>
+                </ul>
+            
+            </div>
+        </div>      
+    </div>
+</section>
+<footer>
+    <div class="footer-info">
+        
+    </div>
+</footer>
+</body>
+</html>
