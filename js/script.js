@@ -32,7 +32,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function start() {
-  
+  // Initializes the client with the API key and the Google Vision API.
+  /*gapi.client.init({
+    'apiKey': "AIzaSyA7MWHhBgV5mzckdNEfHcCVWXoQS6r6VDM",
+    'discoveryDocs': ['https://content.googleapis.com/discovery/v1/apis/vision/v1/rest']    
+  }, function(reason) {
+    console.log('Error: ' + reason.result.error.message);
+  });*/
 }
 
 function getInfoImage(imageName, functionToExecute, numberImage) {
