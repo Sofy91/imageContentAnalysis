@@ -24,4 +24,20 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollTop: sectionTop
         }, 1000);
     });
+
+    $('#link-news').click(function(e) {
+      e.preventDefault();
+      let sectionTop = $("#section-news").offset().top - 70;
+      $('html, body').animate({
+        scrollTop: sectionTop
+        }, 1000);
+    });
+
+    $('#link-contact').click(function(e) {
+      e.preventDefault();
+      let sectionTop = $("#section-contact").offset().top - 70;
+      $('html, body').animate({
+        scrollTop: sectionTop
+        }, 1000);
+    });
 });
