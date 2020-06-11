@@ -1,5 +1,4 @@
 function getImageFirebase(){
-      
       /*getInfoImage('', analysisImageGVApi, '08');
       getInfoImage('', analysisImageGVApi, '80');
       getInfoImage('', analysisImageGVApi, '81');

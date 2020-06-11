@@ -15,15 +15,17 @@
 
 body{
     font-family: monospace;
+    overflow-x: hidden;
 }
 
 .nav{
     width: 100%;
-    height: 70px;
+    height: 56px;
     background-color: #81a29b;
     position: fixed;
     z-index: 99999;
     justify-content: space-between;
+    font-size: 12px;
 }
 
 .nav ul {
@@ -39,6 +41,7 @@ body{
     line-height: 70px;
     height: 40px;
     border-bottom: 1px solid #888;
+    margin-top: -6px;
 }
 
 .nav a {
@@ -61,11 +64,15 @@ body{
     margin-right: 20px;
 }
 
+ul:not(.browser-default) {
+    padding-left: 0px;
+}
+
 @media screen and (min-width: 600px) {
     .nav li {
         width: 120px;
         border-bottom: none;
-        height: 70px;
+        height: 60px;
         line-height: 70px;
         font-size: 1.4em;
         width: auto;
@@ -92,14 +99,13 @@ body{
 }
 
 section h2{
-    margin-bottom: 20px;
-    font-size: 30px;
-    margin: 0px auto 10px;
+    font-size: 28px;
+    margin: 0ppx;
 }
 
 .image-bg{
     width: 100%;
-    height: 900px;
+    height: 730px;
     background: url('../images/bg-desktop.jpg') no-repeat;
     background-size: cover;
     background-position: 0% 30%;
@@ -107,17 +113,25 @@ section h2{
 
 .image-bg-sponsor{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background: url('../images/bg-desktop.jpg') no-repeat;
     background-size: cover;
-    background-position: 0% 93%;
+    background-position: 0% 92%;
+}
+
+.image-bg-login{
+    width: 100%;
+    height: 250px;
+    background: url('../images/bg-desktop.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0% 92%;
 }
 
 .title-header{
     font-family: 'barets', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
-    top: 450px;
+    top: 360px;
     position: relative;
     color: #81a29b;
     text-shadow: -5px 3px 4px rgba(150, 150, 150, 0.55);
@@ -126,9 +140,9 @@ section h2{
 
 .subtitle-header{
     font-family: 'barets', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 36px;
     text-align: center;
-    top: 470px;
+    top: 370px;
     position: relative;
     color: #81a29b;
     margin: 0 30px;
@@ -136,9 +150,18 @@ section h2{
 
 .subtitle-header-sponsor{
     font-family: 'barets', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 42px;
     text-align: center;
-    top: 200px;
+    top: 176px;
+    position: relative;
+    color: #353232;
+    margin: 0 30px;
+}
+
+.subtitle-header-login{
+    font-family: 'barets', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    text-align: center;
     position: relative;
     color: #353232;
     margin: 0 30px;
@@ -146,20 +169,26 @@ section h2{
 
 .title-section{
     font-family: 'exo2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #848181;
-    margin: 45px;
+    margin: 30px;
 }
 
 .image-how-it-work{
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-color: #7a9c9666;
+}
+
+.image-login{
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
 }
 
 .bg-sponsor{
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-color: #fff;
 }
 
@@ -171,7 +200,7 @@ section h2{
 
 .bg-contact{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: #fff;
 }
 
@@ -197,6 +226,32 @@ section h2{
     font-family: 'exo2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#section-sponsor-login{
+    font-family: 'exo2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 750px;
+}
+
+#section-login{
+    font-family: 'exo2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 130px;
+}
+
+.login-box{
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px;
+}
+
+.row-login{
+    margin-bottom: 40px !important;
+}
+
+.text-input{
+    width: 360px;
+    height: 45px;
+}
+
 .row-sponsor{
     min-height: 200px;
 }
@@ -206,37 +261,46 @@ section h2{
 }
 
 .title-analysis{
-    font-size: 36px;
+    font-size: 32px;
     color: #848181;
-    margin: 54px;
+    margin: 30px;
 }
 
 .logo-web{
     margin-top: 20px;
-    height: 100px;
+    height: 70px;
+}
+
+.tick-logo{
+    background: url(../images/tick.png) no-repeat;
+    background-size: 19px;
+    background-position: center;
+    width: 25px;
+    height: 12px;
+    display: inline-block;
 }
 
 #logo-marca{
     background: url(../images/marca.png) no-repeat;
-    background-size: 250px;
+    background-size: 200px;
     background-position: center;
 }
 
 #logo-as{
     background: url(../images/as.png) no-repeat;
-    background-size: 150px;
+    background-size: 100px;
     background-position: center;
 }
 
 #logo-mundo-deportivo{
     background: url(../images/mundo-deportivo.png) no-repeat;
-    background-size: 250px;
+    background-size: 200px;
     background-position: center;
 }
 
 #logo-sport{
     background: url(../images/sport.png) no-repeat;
-    background-size: 250px;
+    background-size: 200px;
     background-position: center;
 }
 
@@ -394,15 +458,15 @@ span{
 
   footer{
       width: 100%;
-      height: 100px;
+      height: 88px;
       background-color: #848181;
   }
 
   .footer-info{
     text-align: center;
-    padding: 36px;
+    padding: 30px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'exo2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
@@ -410,7 +474,7 @@ span{
     display: none;
     width: 100%;
     height: 34px;
-    margin: 60px 0 30px;
+    margin: 50px 0 20px;
   }
   
   .progress .progress-bar {
@@ -428,7 +492,7 @@ span{
 }
 
 .row-loading{
-    min-height: 280px;
+    min-height: 220px;
 }
 
 .row-result{
@@ -438,40 +502,40 @@ span{
 }
 
 .list-result{
-    margin: 30px;
+    margin-top: 25px;
     text-align: left;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .leyend-blue{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #0f7f96;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 7px;
     border-radius: 15px;
 }
 
 .leyend-yellow{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #d8a407;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 7px;
     border-radius: 15px;
 }
 
 .leyend-red{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #dc3545;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 7px;
     border-radius: 15px;
 }
 
-.btn-sponsor{
+.btn-sponsor, .btn-login{
     width: 250px;
     height: 30px;
     border: 1px solid grey;
@@ -496,12 +560,19 @@ span{
     color: #fff;
 }
 
+.btn-login:hover{
+    background-color: #81a29b;
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo-image{
     background: url(../images/logo-web.png) no-repeat;
-    width: 240px;
-    background-size: 240px;
-    height: 40px;
+    width: 205px;
+    background-size: 210px;
+    height: 38px;
     margin-top: 4px;
+    margin-left: -40px;
 }
 
 .logo-bg-contact{
@@ -543,20 +614,263 @@ span{
     background-size: 45px;
 }
 
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0) scaleX(3);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0) scaleX(1);
+    }
+  
+    75% {
+      transform: translate3d(10px, 0, 0) scaleX(0.98);
+    }
+  
+    90% {
+      transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounceInRight {
+    animation: bounceInRight;
+    animation-duration: 2s;
+  }
+
+  @keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(-3000px, 0, 0) scaleX(3);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(25px, 0, 0) scaleX(1);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0) scaleX(0.995);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounceInLeft {
+    animation: bounceInLeft;
+    animation-duration: 2s;
+  }
+
+
 .news-left, .news-right{
-    width: 450px;
-    height: 285px;
+    opacity: 0;
+}
+
+.news{
+    width: 420px;
+    height: 265px;
     display: inline-block;
     margin-top: 10px;
     border-radius: 10px;
 }
 
-.news-left{
+.news-left-1{
     background: url(../images/news-left-1.png) no-repeat;
-    background-size: 450px;
+    background-size: 420px;
 }
 
-.news-right{
+.news-right-1{
     background: url(../images/news-right-1.png) no-repeat;
-    background-size: 450px;
+    background-size: 420px;
+}
+
+.news-left-2 {
+    background: url(../images/news-left-2.png) no-repeat;
+    background-size: 420px;
+}
+
+.news-right-2{
+    background: url(../images/news-right-2.png) no-repeat;
+    background-size: 420px;
+}
+
+.news-left-1:hover, .news-right-1:hover, .news-left-2:hover, .news-right-2:hover{
+    background-size: 430px;
+    width: 430px;
+}
+
+.logo{
+    height: 150px;
+    margin: 20px 30px 0;
+}
+
+.logo-la-liga{
+    background: url(../images/logos-patrocinadores/la-liga.png) no-repeat;
+    background-size: 120px;
+    background-position: right center;
+}
+
+.logo-fly-emirates{
+    background: url(../images/logos-patrocinadores/fly-emirates.png) no-repeat;
+    background-size: 120px;
+    background-position: left center;
+}
+
+.logo-ea-sport{
+    background: url(../images/logos-patrocinadores/ea-sport.png) no-repeat;
+    background-size: 100px;
+    background-position: center center;
+}
+
+.logo-puma{
+    background: url(../images/logos-patrocinadores/puma.png) no-repeat;
+    background-size: 120px;
+    background-position: center center;
+
+}
+
+.logo-rexona{
+    background: url(../images/logos-patrocinadores/rexona.png) no-repeat;
+    background-size: 120px;
+    background-position: right center;
+}
+
+.logo-bkt{
+    background: url(../images/logos-patrocinadores/bkt.png) no-repeat;
+    background-size: 120px;
+    background-position: center center;
+}
+
+.logo-el-corte-ingles{
+    background: url(../images/logos-patrocinadores/el-corte-ingles.jpeg) no-repeat;
+    background-size: 120px;
+    background-position: center center;
+}
+
+.logo-panini{
+    background: url(../images/logos-patrocinadores/panini.png) no-repeat;
+    background-size: 120px;
+    background-position: left center;
+}
+
+.how-step{
+    display: inline-block;
+    margin: 30px;
+    width: 380px;
+    height: 300px;
+    background-size: 380px;
+}
+
+.how-it-work-step-1{
+    background: url(../images/step-1.png) no-repeat;
+    background-size: 380px;
+    height: 350px;
+    background-position: center;
+}
+
+.how-it-work-step-1:hover{
+    background-size: 390px;
+}
+
+.how-it-work-step-2{
+    background: url(../images/step-2.png) no-repeat;
+    background-size: 190px;
+    height: 350px;
+    background-position: right;
+}
+
+.how-it-work-step-2:hover{
+    background-size: 200px;
+}
+
+.how-it-work-step-3{
+    background: url(../images/step-3.png) no-repeat;
+    background-size: 160px;
+    height: 350px;
+    background-position: center;
+}
+
+.how-it-work-step-3:hover{
+    background-size: 170px;
+}
+
+.how-it-work-step-4{
+    background: url(../images/step-4.png) no-repeat;
+    background-size: 187px;
+    height: 350px;
+    background-position: left;
+}
+
+.how-it-work-step-4:hover{
+    background-size: 197px;
+}
+
+.image-rm-1{
+    background: url(../images/real-madrid/RM-1.jpg) no-repeat;
+}
+
+.image-rm-2{
+    background: url(../images/real-madrid/RM-3.jpg) no-repeat;
+}
+
+.image-rm-3{
+    background: url(../images/real-madrid/RM-18.jpg) no-repeat;
+}
+
+.image-rm-4{
+    background: url(../images/real-madrid/RM-20.jpg) no-repeat;
+}
+
+.image-rm-5{
+    background: url(../images/real-madrid/RM-67.jpg) no-repeat;
+}
+
+.image-rm-6{
+    background: url(../images/real-madrid/RM-97.jpg) no-repeat;
+}
+
+.image-rm-min{
+    background-size: contain;
+    background-position: center center;
+    width: auto;
+    height: 100px;
+    transition: transform .2s;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.image-rm-min:hover{
+    transform: scale(2.5);
+    cursor: pointer;
+    z-index: 3;
 }
