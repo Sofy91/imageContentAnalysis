@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IMAGE SPONSOR ANALYSIS</title>
+        <link rel="icon" href="fav.ico" type="views/"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">    
+        <link rel="stylesheet" href="../css/styles.css">  
+        
+        <script src="https://apis.google.com/js/api.js"></script> 
+        <script src="../js/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="../js/login.js"></script>
+    </head>
+<body>
+<header class="d-flex">
+    <div class="nav">
+        <ul>
+          <li class="home"><a id="link-home" href="../index.html" class="logo-image"></a></li>
+          <li class="how-it-work"><a id="link-how-it-work" href="../index.html">Cómo funciona</a></li>
+          <li class="sponsor"><a id="link-sponsor" href="../index.html">Patrocinadores</a></li>
+          <li class="news"><a id="link-news" href="../index.html">Noticias</a></li>
+          <li class="contact"><a id="link-contact" href="../index.html">Contacto</a></li>
+        </ul>
+        <ul class="list-right">
+            <li class="login"><a id="link-login" href="#">Iniciar sesión</a></li>
+        </ul>
+    </div>
+</header>
+<section id="section-login">
+    <div class="image-login">
+        <div class="container text-center">    
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 text-center">                
+                    <div class="login-box">
+                        <form action="/views/sponsor.html">
+                            <div class="row row-login">
+                                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                    <h2 class="subtitle-header-login">INICIA SESIÓN</h2>
+                                </div>
+                            </div>       
+                            <div class="row row-login">
+                                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                    <input type="email" name="email*" class="text-input" placeholder="Email*" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                </div>
+                            </div>
+                            <div class="row row-login">
+                                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                    <input type="password" name="pass*" class="text-input" placeholder="Password*" required >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                    <input type="submit" class="btn-login" id="btn-login" value="Inicia sesión">
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-xs-6 text-center">
+                    <div class="login-box"> 
+                        <div class="row row-login">
+                            <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                <h2 class="subtitle-header-login">CREAR UNA CUENTA</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs12 text-left">
+                                <p>
+                                    Crea una cuenta y disfruta de las ventajas:
+                                </p>
+                            
+                                <p>
+                                    <span class="tick-logo"></span>
+                                    Obtén resultados de tus patrocinios en tiempo real y analiza tus inversiones
+                                </p>
+                                <p>
+                                    <span class="tick-logo"></span>
+                                    Recibe informes diarios con todos los análisis de tus clubs
+                                </p>
+                                <p>
+                                    <span class="tick-logo"></span>
+                                    Calcula la inversión y los beneficios de patrocinar a un nuevo club deportivo
+                                </p>
+                            </div>
+                        </div>               
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs12 text-center">
+                                <input type="submit" class="btn-login" id="btn-login" value="Unirse">
+                            </div>
+                        </div>                
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-info">
+        Política de privacidad | Política de cookies | Configuración de cookies | Términos y condiciones 
+    </div>
+</footer>
+</body>
+</html>
